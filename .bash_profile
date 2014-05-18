@@ -6,5 +6,5 @@ export CLICOLOR=1
 export TERM=xterm-256color
 
 # powerline
-. /Users/zeiss/Library/powerline/powerline/bindings/bash/powerline.sh
+. /Library/powerline/powerline/bindings/bash/powerline.sh
 

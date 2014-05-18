@@ -14,7 +14,7 @@ filetype plugin indent on
 
 
 " powerline
-set rtp+=/Users/zeiss/Library/powerline/powerline/bindings/vim/
+set rtp+=/Library/powerline/powerline/bindings/vim/
 set laststatus=2
 
 
