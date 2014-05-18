@@ -3,3 +3,6 @@
 
 # python noise
 *.pyc
+
+# vim noise
+*.swp
