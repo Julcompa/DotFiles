@@ -49,6 +49,7 @@ set autoindent
 set smartindent
 
 set history=1024
+set hlsearch
 
 syntax enable
 set background=dark
