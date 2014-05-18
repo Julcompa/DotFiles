@@ -5,9 +5,11 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
-Plugin 'scrooloose/nerdtree'
+
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/nerdtree'
 Plugin 'kelan/gyp.vim'
+Plugin 'airblade/vim-gitgutter'
 
 call vundle#end()
 filetype plugin indent on
@@ -26,12 +28,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 " YouCompleteMe
 let g:ycm_confirm_extra_conf = 0
-
+let g:ycm_enable_diagnostic_signs = 0
 set completeopt-=preview
-let g:ycm_add_preview_to_completeopt = 0
-
-let g:ycm_error_symbol = '>>'
-let g:ycm_warning_symbol = '>>'
 
 map <C-g> :YcmCompleter GoToDefinition<CR>
 map <C-d> :YcmCompleter GoToDeclaration<CR>
@@ -60,3 +58,6 @@ if has('gui_running')
   set guifont=Source_Code_Pro_for_Powerline:h13
 endif
 
+
+" set SignColumn style to the same as LineNr
+highlight SignColumn ctermfg=10 ctermbg=0 guifg=Yellow
