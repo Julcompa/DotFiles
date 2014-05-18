@@ -41,10 +41,12 @@ map <C-d> :YcmCompleter GoToDeclaration<CR>
 set number
 set cc=80
 
+set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-set expandtab
+set autoindent
+set smartindent
 
 set history=1024
 
