@@ -10,6 +10,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kelan/gyp.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -24,6 +25,10 @@ set laststatus=2
 map <C-n> :NERDTreeToggle<CR>
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+
+" Crtl-P
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 
 " YouCompleteMe
