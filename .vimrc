@@ -66,3 +66,20 @@ endif
 
 " set SignColumn style to the same as LineNr
 highlight SignColumn ctermfg=10 ctermbg=0 guifg=Yellow
+
+
+" Ctrl-r to run
+map <C-r> :call Run()<CR>
+
+:function Run()
+: silent !clear
+: execute "!" . "./run"
+:endfunction
+
+
+" Ctrl-x to open .xcodeproj
+map <C-x> :call OpenXcode()<CR>
+
+:function OpenXcode()
+: execute "!" . "open app.xcodeproj"
+:endfunction
