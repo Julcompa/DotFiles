@@ -68,8 +68,8 @@ endif
 highlight SignColumn ctermfg=10 ctermbg=0 guifg=Yellow
 
 
-" Ctrl-d to debug
-map <C-d> :call Debug()<CR>
+" Ctrl-u to debug
+map <C-u> :call Debug()<CR>
 
 :function Debug()
 : silent !clear
