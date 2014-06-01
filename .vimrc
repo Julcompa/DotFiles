@@ -68,14 +68,13 @@ endif
 highlight SignColumn ctermfg=10 ctermbg=0 guifg=Yellow
 
 
-" Ctrl-r to run
-map <C-r> :call Run()<CR>
+" Ctrl-d to debug
+map <C-d> :call Debug()<CR>
 
-:function Run()
+:function Debug()
 : silent !clear
-: execute "!" . "./run"
+: execute "!" . "./run debug"
 :endfunction
-
 
 " Ctrl-x to open .xcodeproj
 map <C-x> :call OpenXcode()<CR>
