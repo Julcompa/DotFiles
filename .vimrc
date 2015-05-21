@@ -5,12 +5,17 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
-
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kelan/gyp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'kien/ctrlp.vim'
+Plugin 'Keithbsmiley/swift.vim'
+Plugin 'vim-scripts/TwitVim'
+Plugin 'kovisoft/slimv'
+Plugin 'cespare/vim-toml'
+Plugin 'rust-lang/rust.vim'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 filetype plugin indent on
@@ -42,7 +47,7 @@ map <C-d> :YcmCompleter GoToDeclaration<CR>
 
 " syntax highlighting with solarized dark
 set number
-set cc=80
+set cc=120
 
 set expandtab
 set tabstop=2
@@ -68,17 +73,6 @@ endif
 highlight SignColumn ctermfg=10 ctermbg=0 guifg=Yellow
 
 
-" Ctrl-u to debug
-map <C-u> :call Debug()<CR>
+" Slimv
+let g:lisp_rainbow=1
 
-:function Debug()
-: silent !clear
-: execute "!" . "./run debug"
-:endfunction
-
-" Ctrl-x to open .xcodeproj
-map <C-x> :call OpenXcode()<CR>
-
-:function OpenXcode()
-: execute "!" . "open app.xcodeproj"
-:endfunction
