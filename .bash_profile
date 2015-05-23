@@ -12,6 +12,7 @@ export EDITOR=vim
 
 alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 alias gc="git add -A; git commit"
+alias splith="tmux split -h"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
