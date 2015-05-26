@@ -10,10 +10,12 @@ export CLICOLOR=TRUE
 export TERM=xterm-256color
 export EDITOR=vim
 
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+### Alias
 alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
 alias gc="git add -A; git commit"
 alias splith="tmux split -h"
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+alias c="clear"
 
