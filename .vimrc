@@ -49,6 +49,7 @@ map <C-d> :YcmCompleter GoToDeclaration<CR>
 " syntax highlighting with solarized dark
 set number
 set cc=120
+set cursorline cursorcolumn
 
 set expandtab
 set tabstop=2
@@ -66,7 +67,7 @@ colorscheme solarized
 
 if has('gui_running')
   set anti enc=utf-8
-  set guifont=Source_Code_Pro_for_Powerline:h13
+  set guifont=Source_Code_Pro_Light:h13
 endif
 
 

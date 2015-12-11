@@ -15,7 +15,18 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 ### Alias
 alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
-alias gc="git add -A; git commit"
 alias splith="tmux split -h"
+alias attach="tmux attach -t"
 alias c="clear"
 
+alias cnpm="npm --registry=https://registry.npm.taobao.org \
+  --cache=$HOME/.npm/.cache/cnpm \
+  --disturl=https://npm.taobao.org/dist \
+  --userconfig=$HOME/.cnpmrc"
+
+### The Open Source Version of Swift
+export PATH="/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:$PATH"
+
+### Node Version Manager
+export NVM_DIR="/Users/eyeplum/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
