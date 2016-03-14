@@ -5,18 +5,15 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kelan/gyp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Keithbsmiley/swift.vim'
-Plugin 'vim-scripts/TwitVim'
-Plugin 'kovisoft/slimv'
 Plugin 'cespare/vim-toml'
 Plugin 'rust-lang/rust.vim'
-Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 filetype plugin indent on
