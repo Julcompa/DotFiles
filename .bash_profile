@@ -28,3 +28,6 @@ alias cnpm="npm --registry=https://registry.npm.taobao.org \
 export NVM_DIR="/Users/eyeplum/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+### gitignore.io
+function gitignore() { curl -L -s https://www.gitignore.io/api/$@ ;}
+
