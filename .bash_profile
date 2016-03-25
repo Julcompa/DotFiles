@@ -15,6 +15,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 ### Alias
 alias vim="/Applications/MacVim.app/Contents/MacOS/Vim"
+alias podinv="pod install --no-repo-update --verbose"
 alias splith="tmux split -h"
 alias attach="tmux attach -t"
 alias c="clear"
