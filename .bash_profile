@@ -32,3 +32,6 @@ export NVM_DIR="/Users/eyeplum/.nvm"
 ### gitignore.io
 function gitignore() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
+### Cocoapods
+function spec_toJson() { pod ipc spec $@ > $@.json ;}
+
