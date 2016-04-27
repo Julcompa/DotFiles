@@ -64,7 +64,8 @@ colorscheme solarized
 
 if has('gui_running')
   set anti enc=utf-8
-  set guifont=Source_Code_Pro_Light:h13
+  set guifont=Source\ Code\ Pro\ for\ Powerline:h13
+  hi CursorLineNr guifg=guifg
 endif
 
 
